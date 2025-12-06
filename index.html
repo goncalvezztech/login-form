@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> formulário de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Seção de Login -->
+        <div class="login-section" id="loginSection">
+            <h1>Login</h1>
+            <form>
+                <div class="input-group"><input type="text" placeholder="Email ou usuário" required>
+                </div>
+                <div class="input-group"><input type="password" placeholder="Senha" required>
+                </div>
+                <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                <button type="submit" class="login-btn">Entrar</button>
+            </form>
+        </div>
+        <!-- Seção de Cadastro (inicialmente oculta) -->
+        <div class="login-section" id="signupSection" style="display: none;">
+            <h1>Criar Conta</h1>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Nome completo" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Usuário" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Senha" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Confirmar senha" required>
+                </div>
+                <button type="submit" class="login-btn">Cadastrar</button>
+            </form>
+        </div>
+        <!-- Painel lateral -->
+        <div class="signup-section" id="sidePanel">
+            <h2 id="sideTitle">Não tem uma conta?</h2>
+            <p id="sideText">Cadastre-se para começar!</p>
+            <button class="signup-btn" id="toggleBtn">Criar Conta</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
